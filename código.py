@@ -24,4 +24,7 @@ pegar_cotacoes()
 janela = Tk()
 janela.title('Cotação atual das moedas')
 
+texto_orientacao = Label(janela, text='Clique no botão a baixo para ver as cotações atuais das Moedas')
+texto_orientacao.grid(column=0, row=0)
+
 janela.mainloop()
