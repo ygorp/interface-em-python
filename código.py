@@ -22,6 +22,6 @@ def pegar_cotacoes():
 pegar_cotacoes()
 
 janela = Tk()
-
+janela.title('Cotação atual das moedas')
 
 janela.mainloop()
