@@ -27,4 +27,10 @@ janela.title('Cotação atual das moedas')
 texto_orientacao = Label(janela, text='Clique no botão a baixo para ver as cotações atuais das Moedas')
 texto_orientacao.grid(column=0, row=0)
 
+botao = Button(janela, text="Buscar cotações Dólar/Euro/BTC", command=pegar_cotacoes)
+botao.grid(column=0, row=1)
+
+texto_cotacoes = Label(janela, text="")
+texto_cotacoes.grid(column=0, row=2)
+
 janela.mainloop()
