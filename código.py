@@ -22,14 +22,15 @@ def pegar_cotacoes():
 
 janela = Tk()
 janela.title('Cotação atual das moedas')
+janela.geometry("500x500")
 
 texto_orientacao = Label(janela, text='Clique no botão a baixo para ver as cotações atuais das Moedas')
-texto_orientacao.grid(column=0, row=0)
+texto_orientacao.grid(column=0, row=0, padx=50, pady=50)
 
 botao = Button(janela, text="Buscar cotações Dólar/Euro/BTC", command=pegar_cotacoes)
-botao.grid(column=0, row=1)
+botao.grid(column=0, row=1, padx=50, pady=50)
 
 texto_cotacoes = Label(janela, text="")
-texto_cotacoes.grid(column=0, row=2)
+texto_cotacoes.grid(column=0, row=2, padx=50, pady=50)
 
 janela.mainloop()
