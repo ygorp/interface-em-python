@@ -16,10 +16,9 @@ def pegar_cotacoes():
     Euro: {cotacao_euro}
     BTC: {cotacao_btc}'''
 
-    print(texto)
+    texto_cotacoes["text"] = texto
 
 
-pegar_cotacoes()
 
 janela = Tk()
 janela.title('Cotação atual das moedas')
